@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Comando para ejecutar el servidor
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "server:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
